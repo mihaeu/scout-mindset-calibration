@@ -9,11 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/min/1.5.0/entireframework.min.css"
           integrity="sha512-6m5ZCRMFZCsnMLvCjwrbdZLmNCE52SS5edmlMGzcpMMRTlJY32SoGAljcQ7l+mrm3Ok3n6AR82lV2fN2jS2HsQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        main {
+            width:1000px;
+            margin: 0 auto;
+        }
+
+        .correct-answer {
+            margin-top: 1em;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-<main style="width:1000px;margin: 0 auto;">
+<main>
     <h1>The Scout Mindset - Calibration</h1>
     <p>Online tool for Julia Galef's The Scout Mindset Calibration which you can find at <a href="https://juliagalef.com/calibration">https://juliagalef.com/calibration</a></p>
+    <p>Try it now: [here](https://mihaeu.github.io/scout-mindset-calibration/)</p>
     <form id="questions">
         <h2>Round 1: Are these animal facts true or false?</h2>
         <section>
@@ -27,6 +40,7 @@
             <label for="1-75"><input type="radio" name="1confidence" id="1-75" value="75">75%</label>
             <label for="1-85"><input type="radio" name="1confidence" id="1-85" value="85">85%</label>
             <label for="1-95"><input type="radio" name="1confidence" id="1-95" value="95">95%</label>
+            <div class="correct-answer 1-correct-answer">False. The blue whale, not the elephant, is the largest mammal.</div>
         </section>
         <section>
             <h3>2. Sea otters sometimes hold hands while they sleep.</h3>
@@ -39,6 +53,7 @@
             <label for="2-75"><input type="radio" name="2confidence" id="2-75" value="75">75%</label>
             <label for="2-85"><input type="radio" name="2confidence" id="2-85" value="85">85%</label>
             <label for="2-95"><input type="radio" name="2confidence" id="2-95" value="95">95%</label>
+            <div class="correct-answer 2-correct-answer">True.</div>
         </section>
         <section>
             <h3>3. Centipedes have more legs than any other animal.</h3>
@@ -51,6 +66,8 @@
             <label for="3-75"><input type="radio" name="3confidence" id="3-75" value="75">75%</label>
             <label for="3-85"><input type="radio" name="3confidence" id="3-85" value="85">85%</label>
             <label for="3-95"><input type="radio" name="3confidence" id="3-95" value="95">95%</label>
+            <div class="correct-answer 3-correct-answer">The millipede is the animal with the most legs— some have as
+                many as 750 legs. The centipede can have up to 354 legs.</div>
         </section>
         <section>
             <h3>4. Mammals and dinosaurs coexisted.</h3>
@@ -63,6 +80,7 @@
             <label for="4-75"><input type="radio" name="4confidence" id="4-75" value="75">75%</label>
             <label for="4-85"><input type="radio" name="4confidence" id="4-85" value="85">85%</label>
             <label for="4-95"><input type="radio" name="4confidence" id="4-95" value="95">95%</label>
+            <div class="correct-answer 4-correct-answer">True. The first mammals appeared roughly 200 million years ago. Dinosaurs went extinct roughly 65 million years ago.</div>
         </section>
         <section>
             <h3>5. Bears can’t climb trees.</h3>
@@ -75,6 +93,9 @@
             <label for="5-75"><input type="radio" name="5confidence" id="5-75" value="75">75%</label>
             <label for="5-85"><input type="radio" name="5confidence" id="5-85" value="85">85%</label>
             <label for="5-95"><input type="radio" name="5confidence" id="5-95" value="95">95%</label>
+            <div class="correct-answer 5-correct-answer">False.
+
+            </div>
         </section>
         <section>
             <h3>6. Camels store water in their humps.</h3>
@@ -87,6 +108,9 @@
             <label for="6-75"><input type="radio" name="6confidence" id="6-75" value="75">75%</label>
             <label for="6-85"><input type="radio" name="6confidence" id="6-85" value="85">85%</label>
             <label for="6-95"><input type="radio" name="6confidence" id="6-95" value="95">95%</label>
+            <div class="correct-answer 6-correct-answer">False. Camels store fat, not water, in their humps.
+
+            </div>
         </section>
         <section>
             <h3>7. Flamingos are pink because they eat shrimp.</h3>
@@ -99,6 +123,7 @@
             <label for="7-75"><input type="radio" name="7confidence" id="7-75" value="75">75%</label>
             <label for="7-85"><input type="radio" name="7confidence" id="7-85" value="85">85%</label>
             <label for="7-95"><input type="radio" name="7confidence" id="7-95" value="95">95%</label>
+            <div class="correct-answer 7-correct-answer">True.</div>
         </section>
         <section>
             <h3>8. The giant panda eats mostly bamboo.</h3>
@@ -111,6 +136,7 @@
             <label for="8-75"><input type="radio" name="8confidence" id="8-75" value="75">75%</label>
             <label for="8-85"><input type="radio" name="8confidence" id="8-85" value="85">85%</label>
             <label for="8-95"><input type="radio" name="8confidence" id="8-95" value="95">95%</label>
+            <div class="correct-answer 8-correct-answer">True. A giant panda’s diet is almost entirely bamboo.</div>
         </section>
         <section>
             <h3>9. The platypus is the only mammal that lays eggs.</h3>
@@ -123,6 +149,7 @@
             <label for="9-75"><input type="radio" name="9confidence" id="9-75" value="75">75%</label>
             <label for="9-85"><input type="radio" name="9confidence" id="9-85" value="85">85%</label>
             <label for="9-95"><input type="radio" name="9confidence" id="9-95" value="95">95%</label>
+            <div class="correct-answer 9-correct-answer">False. The platypus is one of two mammals that lay eggs. The other is the echidna.</div>
         </section>
         <section>
             <h3>10. A mule is a cross between a male donkey and a female horse.</h3>
@@ -135,6 +162,7 @@
             <label for="10-75"><input type="radio" name="10confidence" id="10-75" value="75">75%</label>
             <label for="10-85"><input type="radio" name="10confidence" id="10-85" value="85">85%</label>
             <label for="10-95"><input type="radio" name="10confidence" id="10-95" value="95">95%</label>
+            <div class="correct-answer 10-correct-answer">True.</div>
         </section>
         <h2>Round 2: Which historical figure was born first?</h2>
         <section>
@@ -150,6 +178,7 @@
             <label for="11-75"><input type="radio" name="11confidence" id="11-75" value="75">75%</label>
             <label for="11-85"><input type="radio" name="11confidence" id="11-85" value="85">85%</label>
             <label for="11-95"><input type="radio" name="11confidence" id="11-95" value="95">95%</label>
+            <div class="correct-answer 11-correct-answer">Confucius (551 BC) was born before Julius Caesar (100 BC).</div>
         </section>
         <section>
             <h3>12. Fidel Castro or Mahatma Gandhi?</h3>
@@ -164,6 +193,7 @@
             <label for="12-75"><input type="radio" name="12confidence" id="12-75" value="75">75%</label>
             <label for="12-85"><input type="radio" name="12confidence" id="12-85" value="85">85%</label>
             <label for="12-95"><input type="radio" name="12confidence" id="12-95" value="95">95%</label>
+            <div class="correct-answer 12-correct-answer">Mahatma Gandhi (1869) was born before Fidel Castro (1926).</div>
         </section>
         <section>
             <h3>13. Nelson Mandela or Anne Frank?</h3>
@@ -178,6 +208,7 @@
             <label for="13-75"><input type="radio" name="13confidence" id="13-75" value="75">75%</label>
             <label for="13-85"><input type="radio" name="13confidence" id="13-85" value="85">85%</label>
             <label for="13-95"><input type="radio" name="13confidence" id="13-95" value="95">95%</label>
+            <div class="correct-answer 13-correct-answer">Nelson Mandela (1918) was born before Anne Frank (1929).</div>
         </section>
         <section>
             <h3>14. Cleopatra or Muhammad?</h3>
@@ -192,6 +223,7 @@
             <label for="14-75"><input type="radio" name="14confidence" id="14-75" value="75">75%</label>
             <label for="14-85"><input type="radio" name="14confidence" id="14-85" value="85">85%</label>
             <label for="14-95"><input type="radio" name="14confidence" id="14-95" value="95">95%</label>
+            <div class="correct-answer 14-correct-answer">Cleopatra (69 BC) was born before Muhammad (circa 570).</div>
         </section>
         <section>
             <h3>15. William Shakespeare or Joan of Arc?</h3>
@@ -206,6 +238,7 @@
             <label for="15-75"><input type="radio" name="15confidence" id="15-75" value="75">75%</label>
             <label for="15-85"><input type="radio" name="15confidence" id="15-85" value="85">85%</label>
             <label for="15-95"><input type="radio" name="15confidence" id="15-95" value="95">95%</label>
+            <div class="correct-answer 15-correct-answer">Joan of Arc (circa 1412) was born before William Shakespeare (1564).</div>
         </section>
         <section>
             <h3>16. George Washington or Sun Tzu?</h3>
@@ -219,6 +252,7 @@
             <label for="16-75"><input type="radio" name="16confidence" id="16-75" value="75">75%</label>
             <label for="16-85"><input type="radio" name="16confidence" id="16-85" value="85">85%</label>
             <label for="16-95"><input type="radio" name="16confidence" id="16-95" value="95">95%</label>
+            <div class="correct-answer 16-correct-answer">Sun Tzu (544 BC) was born before George Washington (1732).</div>
         </section>
         <section>
             <h3>17. Genghis Khan or Leonardo da Vinci?</h3>
@@ -233,6 +267,7 @@
             <label for="17-75"><input type="radio" name="17confidence" id="17-75" value="75">75%</label>
             <label for="17-85"><input type="radio" name="17confidence" id="17-85" value="85">85%</label>
             <label for="17-95"><input type="radio" name="17confidence" id="17-95" value="95">95%</label>
+            <div class="correct-answer 17-correct-answer">Genghis Khan (circa 1160) was born before Leonardo da Vinci (1452).</div>
         </section>
         <section>
             <h3>18. Queen Victoria or Karl Marx?</h3>
@@ -247,6 +282,7 @@
             <label for="18-75"><input type="radio" name="18confidence" id="18-75" value="75">75%</label>
             <label for="18-85"><input type="radio" name="18confidence" id="18-85" value="85">85%</label>
             <label for="18-95"><input type="radio" name="18confidence" id="18-95" value="95">95%</label>
+            <div class="correct-answer 18-correct-answer">Karl Marx (1818) was born before Queen Victoria (1819).</div>
         </section>
         <section>
             <h3>19. Saddam Hussein or Marilyn Monroe?</h3>
@@ -261,6 +297,7 @@
             <label for="19-75"><input type="radio" name="19confidence" id="19-75" value="75">75%</label>
             <label for="19-85"><input type="radio" name="19confidence" id="19-85" value="85">85%</label>
             <label for="19-95"><input type="radio" name="19confidence" id="19-95" value="95">95%</label>
+            <div class="correct-answer 19-correct-answer">Marilyn Monroe (1926) was born before Saddam Hussein (1937).</div>
         </section>
         <section>
             <h3>20. Albert Einstein or Mao Zedong?</h3>
@@ -275,6 +312,7 @@
             <label for="20-75"><input type="radio" name="20confidence" id="20-75" value="75">75%</label>
             <label for="20-85"><input type="radio" name="20confidence" id="20-85" value="85">85%</label>
             <label for="20-95"><input type="radio" name="20confidence" id="20-95" value="95">95%</label>
+            <div class="correct-answer 20-correct-answer">Albert Einstein (1879) was born before Mao Zedong (1893).</div>
         </section>
         <h2>Round 3: Which country had more people in 2019?</h2>
         <section>
@@ -288,6 +326,7 @@
             <label for="21-75"><input type="radio" name="21confidence" id="21-75" value="75">75%</label>
             <label for="21-85"><input type="radio" name="21confidence" id="21-85" value="85">85%</label>
             <label for="21-95"><input type="radio" name="21confidence" id="21-95" value="95">95%</label>
+            <div class="correct-answer 21-correct-answer">Germany (84 million) has more people than France (65 million).</div>
         </section>
         <section>
             <h3>22. Japan or South Korea?</h3>
@@ -300,6 +339,7 @@
             <label for="22-75"><input type="radio" name="22confidence" id="22-75" value="75">75%</label>
             <label for="22-85"><input type="radio" name="22confidence" id="22-85" value="85">85%</label>
             <label for="22-95"><input type="radio" name="22confidence" id="22-95" value="95">95%</label>
+            <div class="correct-answer 22-correct-answer">Japan (127 million) has more people than South Korea (51 million).</div>
         </section>
         <section>
             <h3>23. Brazil or Argentina?</h3>
@@ -313,6 +353,7 @@
             <label for="23-75"><input type="radio" name="23confidence" id="23-75" value="75">75%</label>
             <label for="23-85"><input type="radio" name="23confidence" id="23-85" value="85">85%</label>
             <label for="23-95"><input type="radio" name="23confidence" id="23-95" value="95">95%</label>
+            <div class="correct-answer 23-correct-answer">Brazil (211 million) has more people than Argentina (45 million).</div>
         </section>
         <section>
             <h3>24. Egypt or Botswana?</h3>
@@ -326,6 +367,7 @@
             <label for="24-75"><input type="radio" name="24confidence" id="24-75" value="75">75%</label>
             <label for="24-85"><input type="radio" name="24confidence" id="24-85" value="85">85%</label>
             <label for="24-95"><input type="radio" name="24confidence" id="24-95" value="95">95%</label>
+            <div class="correct-answer 24-correct-answer">Egypt (100 million) has more people than Botswana (2 million).</div>
         </section>
         <section>
             <h3>25. Mexico or Guatemala?</h3>
@@ -339,6 +381,7 @@
             <label for="25-75"><input type="radio" name="25confidence" id="25-75" value="75">75%</label>
             <label for="25-85"><input type="radio" name="25confidence" id="25-85" value="85">85%</label>
             <label for="25-95"><input type="radio" name="25confidence" id="25-95" value="95">95%</label>
+            <div class="correct-answer 25-correct-answer">Mexico (128 million) has more people than Guatemala (18 million).</div>
         </section>
         <section>
             <h3>26. Panama or Belize?</h3>
@@ -351,6 +394,7 @@
             <label for="26-75"><input type="radio" name="26confidence" id="26-75" value="75">75%</label>
             <label for="26-85"><input type="radio" name="26confidence" id="26-85" value="85">85%</label>
             <label for="26-95"><input type="radio" name="26confidence" id="26-95" value="95">95%</label>
+            <div class="correct-answer 26-correct-answer">Panama (4 million) has more people than Belize (390,000).</div>
         </section>
         <section>
             <h3>27. Jamaica or Haiti?</h3>
@@ -363,6 +407,7 @@
             <label for="27-75"><input type="radio" name="27confidence" id="27-75" value="75">75%</label>
             <label for="27-85"><input type="radio" name="27confidence" id="27-85" value="85">85%</label>
             <label for="27-95"><input type="radio" name="27confidence" id="27-95" value="95">95%</label>
+            <div class="correct-answer 27-correct-answer">Haiti (11 million) has more people than Jamaica (3 million).</div>
         </section>
         <section>
             <h3>28. Greece or Norway?</h3>
@@ -375,6 +420,7 @@
             <label for="28-75"><input type="radio" name="28confidence" id="28-75" value="75">75%</label>
             <label for="28-85"><input type="radio" name="28confidence" id="28-85" value="85">85%</label>
             <label for="28-95"><input type="radio" name="28confidence" id="28-95" value="95">95%</label>
+            <div class="correct-answer 28-correct-answer">Greece (10 million) has more people than Norway (5 million).</div>
         </section>
         <section>
             <h3>29. China or India?</h3>
@@ -387,6 +433,7 @@
             <label for="29-75"><input type="radio" name="29confidence" id="29-75" value="75">75%</label>
             <label for="29-85"><input type="radio" name="29confidence" id="29-85" value="85">85%</label>
             <label for="29-95"><input type="radio" name="29confidence" id="29-95" value="95">95%</label>
+            <div class="correct-answer 29-correct-answer">China (1.43 billion) has more people than India (1.37 billion).</div>
         </section>
         <section>
             <h3>30. Iraq or Iran?</h3>
@@ -399,6 +446,7 @@
             <label for="30-75"><input type="radio" name="30confidence" id="30-75" value="75">75%</label>
             <label for="30-85"><input type="radio" name="30confidence" id="30-85" value="85">85%</label>
             <label for="30-95"><input type="radio" name="30confidence" id="30-95" value="95">95%</label>
+            <div class="correct-answer 30-correct-answer">Iran (83 million) has more people than Iraq (39 million).</div>
         </section>
         <h2>Round 4: Are these science facts true or false?</h2>
         <section>
@@ -412,6 +460,7 @@
             <label for="31-75"><input type="radio" name="31confidence" id="31-75" value="75">75%</label>
             <label for="31-85"><input type="radio" name="31confidence" id="31-85" value="85">85%</label>
             <label for="31-95"><input type="radio" name="31confidence" id="31-95" value="95">95%</label>
+            <div class="correct-answer 31-correct-answer">False. Mars has two moons, Phobos and Deimos.</div>
         </section>
         <section>
             <h3>32. Scurvy is caused by a deficit of vitamin C.</h3>
@@ -424,6 +473,7 @@
             <label for="32-75"><input type="radio" name="32confidence" id="32-75" value="75">75%</label>
             <label for="32-85"><input type="radio" name="32confidence" id="32-85" value="85">85%</label>
             <label for="32-95"><input type="radio" name="32confidence" id="32-95" value="95">95%</label>
+            <div class="correct-answer 32-correct-answer">True.</div>
         </section>
         <section>
             <h3>33. Brass is made from iron and copper.</h3>
@@ -436,6 +486,7 @@
             <label for="33-75"><input type="radio" name="33confidence" id="33-75" value="75">75%</label>
             <label for="33-85"><input type="radio" name="33confidence" id="33-85" value="85">85%</label>
             <label for="33-95"><input type="radio" name="33confidence" id="33-95" value="95">95%</label>
+            <div class="correct-answer 33-correct-answer">False. Brass is made of zinc and copper, not iron and copper.</div>
         </section>
         <section>
             <h3>34. One tablespoon of oil has more calories than one tablespoon of butter.</h3>
@@ -448,6 +499,7 @@
             <label for="34-75"><input type="radio" name="34confidence" id="34-75" value="75">75%</label>
             <label for="34-85"><input type="radio" name="34confidence" id="34-85" value="85">85%</label>
             <label for="34-95"><input type="radio" name="34confidence" id="34-95" value="95">95%</label>
+            <div class="correct-answer 34-correct-answer">True. One tablespoon of oil has roughly 120 calories, while one tablespoon of butter can contain up to 110 calories.</div>
         </section>
         <section>
             <h3>35. Helium is the lightest element.</h3>
@@ -460,6 +512,7 @@
             <label for="35-75"><input type="radio" name="35confidence" id="35-75" value="75">75%</label>
             <label for="35-85"><input type="radio" name="35confidence" id="35-85" value="85">85%</label>
             <label for="35-95"><input type="radio" name="35confidence" id="35-95" value="95">95%</label>
+            <div class="correct-answer 35-correct-answer">False. The lightest element is hydrogen, not helium.</div>
         </section>
         <section>
             <h3>36. The common cold is caused by bacteria.</h3>
@@ -472,6 +525,7 @@
             <label for="36-75"><input type="radio" name="36confidence" id="36-75" value="75">75%</label>
             <label for="36-85"><input type="radio" name="36confidence" id="36-85" value="85">85%</label>
             <label for="36-95"><input type="radio" name="36confidence" id="36-95" value="95">95%</label>
+            <div class="correct-answer 36-correct-answer">False. The common cold is caused by viruses, not bacteria.</div>
         </section>
         <section>
             <h3>37. The deepest place on Earth is in the Pacific Ocean.</h3>
@@ -484,6 +538,7 @@
             <label for="37-75"><input type="radio" name="37confidence" id="37-75" value="75">75%</label>
             <label for="37-85"><input type="radio" name="37confidence" id="37-85" value="85">85%</label>
             <label for="37-95"><input type="radio" name="37confidence" id="37-95" value="95">95%</label>
+            <div class="correct-answer 37-correct-answer">True.</div>
         </section>
         <section>
             <h3>38. Seasons are caused by the earth orbiting the sun in an elliptical path.</h3>
@@ -496,6 +551,7 @@
             <label for="38-75"><input type="radio" name="38confidence" id="38-75" value="75">75%</label>
             <label for="38-85"><input type="radio" name="38confidence" id="38-85" value="85">85%</label>
             <label for="38-95"><input type="radio" name="38confidence" id="38-95" value="95">95%</label>
+            <div class="correct-answer 38-correct-answer">False. Seasons are caused by the tilt of the earth’s axis.</div>
         </section>
         <section>
             <h3>39. Jupiter is the largest planet in our solar system.</h3>
@@ -508,6 +564,7 @@
             <label for="39-75"><input type="radio" name="39confidence" id="39-75" value="75">75%</label>
             <label for="39-85"><input type="radio" name="39confidence" id="39-85" value="85">85%</label>
             <label for="39-95"><input type="radio" name="39confidence" id="39-95" value="95">95%</label>
+            <div class="correct-answer 39-correct-answer">True.</div>
         </section>
         <section>
             <h3> 40. The atoms in a solid are more densely packed than the atoms in a gas.</h3>
@@ -520,6 +577,7 @@
             <label for="40-75"><input type="radio" name="40confidence" id="40-75" value="75">75%</label>
             <label for="40-85"><input type="radio" name="40confidence" id="40-85" value="85">85%</label>
             <label for="40-95"><input type="radio" name="40confidence" id="40-95" value="95">95%</label>
+            <div class="correct-answer 40-correct-answer">True.</div>
         </section>
     </form>
     <h2>Result</h2>
@@ -566,6 +624,13 @@
         </tbody>
     </table>
     <button id="show-result">Calculate confidence level</button>
+
+    <blockquote>
+        Being perfectly calibrated would mean that your “50% sure” claims are in fact correct 50 percent of the time, your “60% sure” claims are correct 60 percent of the time, your “70% sure” claims are correct 70 percent of the time, and so on. Perfect calibration is an abstract ideal, not something that’s possible to achieve in reality. Still, it’s a useful benchmark against which to compare yourself.
+        <br>
+        <br>
+        - Julia Galef
+    </blockquote>
 </main>
 <script>
     const correctAnswers = [
@@ -640,6 +705,16 @@
             document.getElementById(`${confidence}-b`).innerText = confidenceLevel[`${confidence}`].wrongCount;
             document.getElementById(`${confidence}-confidence`).innerText = confidenceLevel[`${confidence}`].correctAtConfidenceLevel ? `${Math.abs(confidenceLevel[`${confidence}`].correctAtConfidenceLevel * 100)}%` : "?";
         });
+
+        [...document.querySelectorAll('.correct-answer')].forEach(el => {
+            el.style.display = "block";
+            const questionNumber = parseInt(el.className.split(" ")[1].replace(/-correct-answer/, ''), 10)
+            if (correctAnswers[questionNumber] === answersAndConfidence[`${questionNumber}answer`]) {
+                el.style.color = "green";
+            } else {
+                el.style.color = "red";
+            }
+        })
     })
 </script>
 </body>
