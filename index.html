@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Scout Mindset - Calibration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/min/1.5.0/entireframework.min.css"
+          integrity="sha512-6m5ZCRMFZCsnMLvCjwrbdZLmNCE52SS5edmlMGzcpMMRTlJY32SoGAljcQ7l+mrm3Ok3n6AR82lV2fN2jS2HsQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<main style="width:1000px;margin: 0 auto;">
+    <h1>The Scout Mindset - Calibration</h1>
+    <p>Online tool for Julia Galef's The Scout Mindset Calibration which you can find at <a href="https://juliagalef.com/calibration">https://juliagalef.com/calibration</a></p>
+    <form id="questions">
+        <h2>Round 1: Are these animal facts true or false?</h2>
+        <section>
+            <h3>1. The elephant is the world’s largest mammal.</h3>
+            <h4>Answer</h4>
+            <label for="1true"><input type="radio" name="1answer" value="true" id="1true"/>true</label>
+            <label for="1false"><input type="radio" name="1answer" value="false" id="1false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="1-55"><input type="radio" name="1confidence" id="1-55" value="55">55%</label>
+            <label for="1-65"><input type="radio" name="1confidence" id="1-65" value="65">65%</label>
+            <label for="1-75"><input type="radio" name="1confidence" id="1-75" value="75">75%</label>
+            <label for="1-85"><input type="radio" name="1confidence" id="1-85" value="85">85%</label>
+            <label for="1-95"><input type="radio" name="1confidence" id="1-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>2. Sea otters sometimes hold hands while they sleep.</h3>
+            <h4>Answer</h4>
+            <label for="2true"><input type="radio" name="2answer" value="true" id="2true"/>true</label>
+            <label for="2false"><input type="radio" name="2answer" value="false" id="2false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="2-55"><input type="radio" name="2confidence" id="2-55" value="55">55%</label>
+            <label for="2-65"><input type="radio" name="2confidence" id="2-65" value="65">65%</label>
+            <label for="2-75"><input type="radio" name="2confidence" id="2-75" value="75">75%</label>
+            <label for="2-85"><input type="radio" name="2confidence" id="2-85" value="85">85%</label>
+            <label for="2-95"><input type="radio" name="2confidence" id="2-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>3. Centipedes have more legs than any other animal.</h3>
+            <h4>Answer</h4>
+            <label for="3true"><input type="radio" name="3answer" value="true" id="3true"/>true</label>
+            <label for="3false"><input type="radio" name="3answer" value="false" id="3false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="3-55"><input type="radio" name="3confidence" id="3-55" value="55">55%</label>
+            <label for="3-65"><input type="radio" name="3confidence" id="3-65" value="65">65%</label>
+            <label for="3-75"><input type="radio" name="3confidence" id="3-75" value="75">75%</label>
+            <label for="3-85"><input type="radio" name="3confidence" id="3-85" value="85">85%</label>
+            <label for="3-95"><input type="radio" name="3confidence" id="3-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>4. Mammals and dinosaurs coexisted.</h3>
+            <h4>Answer</h4>
+            <label for="4true"><input type="radio" name="4answer" value="true" id="4true"/>true</label>
+            <label for="4false"><input type="radio" name="4answer" value="false" id="4false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="4-55"><input type="radio" name="4confidence" id="4-55" value="55">55%</label>
+            <label for="4-65"><input type="radio" name="4confidence" id="4-65" value="65">65%</label>
+            <label for="4-75"><input type="radio" name="4confidence" id="4-75" value="75">75%</label>
+            <label for="4-85"><input type="radio" name="4confidence" id="4-85" value="85">85%</label>
+            <label for="4-95"><input type="radio" name="4confidence" id="4-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>5. Bears can’t climb trees.</h3>
+            <h4>Answer</h4>
+            <label for="5true"><input type="radio" name="5answer" value="true" id="5true"/>true</label>
+            <label for="5false"><input type="radio" name="5answer" value="false" id="5false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="5-55"><input type="radio" name="5confidence" id="5-55" value="55">55%</label>
+            <label for="5-65"><input type="radio" name="5confidence" id="5-65" value="65">65%</label>
+            <label for="5-75"><input type="radio" name="5confidence" id="5-75" value="75">75%</label>
+            <label for="5-85"><input type="radio" name="5confidence" id="5-85" value="85">85%</label>
+            <label for="5-95"><input type="radio" name="5confidence" id="5-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>6. Camels store water in their humps.</h3>
+            <h4>Answer</h4>
+            <label for="6true"><input type="radio" name="6answer" value="true" id="6true"/>true</label>
+            <label for="6false"><input type="radio" name="6answer" value="false" id="6false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="6-55"><input type="radio" name="6confidence" id="6-55" value="55">55%</label>
+            <label for="6-65"><input type="radio" name="6confidence" id="6-65" value="65">65%</label>
+            <label for="6-75"><input type="radio" name="6confidence" id="6-75" value="75">75%</label>
+            <label for="6-85"><input type="radio" name="6confidence" id="6-85" value="85">85%</label>
+            <label for="6-95"><input type="radio" name="6confidence" id="6-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>7. Flamingos are pink because they eat shrimp.</h3>
+            <h4>Answer</h4>
+            <label for="7true"><input type="radio" name="7answer" value="true" id="7true"/>true</label>
+            <label for="7false"><input type="radio" name="7answer" value="false" id="7false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="7-55"><input type="radio" name="7confidence" id="7-55" value="55">55%</label>
+            <label for="7-65"><input type="radio" name="7confidence" id="7-65" value="65">65%</label>
+            <label for="7-75"><input type="radio" name="7confidence" id="7-75" value="75">75%</label>
+            <label for="7-85"><input type="radio" name="7confidence" id="7-85" value="85">85%</label>
+            <label for="7-95"><input type="radio" name="7confidence" id="7-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>8. The giant panda eats mostly bamboo.</h3>
+            <h4>Answer</h4>
+            <label for="8true"><input type="radio" name="8answer" value="true" id="8true"/>true</label>
+            <label for="8false"><input type="radio" name="8answer" value="false" id="8false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="8-55"><input type="radio" name="8confidence" id="8-55" value="55">55%</label>
+            <label for="8-65"><input type="radio" name="8confidence" id="8-65" value="65">65%</label>
+            <label for="8-75"><input type="radio" name="8confidence" id="8-75" value="75">75%</label>
+            <label for="8-85"><input type="radio" name="8confidence" id="8-85" value="85">85%</label>
+            <label for="8-95"><input type="radio" name="8confidence" id="8-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>9. The platypus is the only mammal that lays eggs.</h3>
+            <h4>Answer</h4>
+            <label for="9true"><input type="radio" name="9answer" value="true" id="9true"/>true</label>
+            <label for="9false"><input type="radio" name="9answer" value="false" id="9false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="9-55"><input type="radio" name="9confidence" id="9-55" value="55">55%</label>
+            <label for="9-65"><input type="radio" name="9confidence" id="9-65" value="65">65%</label>
+            <label for="9-75"><input type="radio" name="9confidence" id="9-75" value="75">75%</label>
+            <label for="9-85"><input type="radio" name="9confidence" id="9-85" value="85">85%</label>
+            <label for="9-95"><input type="radio" name="9confidence" id="9-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>10. A mule is a cross between a male donkey and a female horse.</h3>
+            <h4>Answer</h4>
+            <label for="10true"><input type="radio" name="10answer" value="true" id="10true"/>true</label>
+            <label for="10false"><input type="radio" name="10answer" value="false" id="10false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="10-55"><input type="radio" name="10confidence" id="10-55" value="55">55%</label>
+            <label for="10-65"><input type="radio" name="10confidence" id="10-65" value="65">65%</label>
+            <label for="10-75"><input type="radio" name="10confidence" id="10-75" value="75">75%</label>
+            <label for="10-85"><input type="radio" name="10confidence" id="10-85" value="85">85%</label>
+            <label for="10-95"><input type="radio" name="10confidence" id="10-95" value="95">95%</label>
+        </section>
+        <h2>Round 2: Which historical figure was born first?</h2>
+        <section>
+            <h3>11. Julius Caesar or Confucius?</h3>
+            <h4>Answer</h4>
+            <label for="11Julius Caesar"><input type="radio" name="11answer" value="Julius Caesar"
+                                                id="11Julius Caesar"/>Julius Caesar</label>
+            <label for="11Confucius"><input type="radio" name="11answer" value="Confucius"
+                                            id="11Confucius"/>Confucius</label>
+            <h4>Confidence</h4>
+            <label for="11-55"><input type="radio" name="11confidence" id="11-55" value="55">55%</label>
+            <label for="11-65"><input type="radio" name="11confidence" id="11-65" value="65">65%</label>
+            <label for="11-75"><input type="radio" name="11confidence" id="11-75" value="75">75%</label>
+            <label for="11-85"><input type="radio" name="11confidence" id="11-85" value="85">85%</label>
+            <label for="11-95"><input type="radio" name="11confidence" id="11-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>12. Fidel Castro or Mahatma Gandhi?</h3>
+            <h4>Answer</h4>
+            <label for="12Fidel Castro"><input type="radio" name="12answer" value="Fidel Castro" id="12Fidel Castro"/>Fidel
+                Castro</label>
+            <label for="12Mahatma Gandhi"><input type="radio" name="12answer" value="Mahatma Gandhi"
+                                                 id="12Mahatma Gandhi"/>Mahatma Gandhi</label>
+            <h4>Confidence</h4>
+            <label for="12-55"><input type="radio" name="12confidence" id="12-55" value="55">55%</label>
+            <label for="12-65"><input type="radio" name="12confidence" id="12-65" value="65">65%</label>
+            <label for="12-75"><input type="radio" name="12confidence" id="12-75" value="75">75%</label>
+            <label for="12-85"><input type="radio" name="12confidence" id="12-85" value="85">85%</label>
+            <label for="12-95"><input type="radio" name="12confidence" id="12-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>13. Nelson Mandela or Anne Frank?</h3>
+            <h4>Answer</h4>
+            <label for="13Nelson Mandela"><input type="radio" name="13answer" value="Nelson Mandela"
+                                                 id="13Nelson Mandela"/>Nelson Mandela</label>
+            <label for="13Anne Frank"><input type="radio" name="13answer" value="Anne Frank" id="13Anne Frank"/>Anne
+                Frank</label>
+            <h4>Confidence</h4>
+            <label for="13-55"><input type="radio" name="13confidence" id="13-55" value="55">55%</label>
+            <label for="13-65"><input type="radio" name="13confidence" id="13-65" value="65">65%</label>
+            <label for="13-75"><input type="radio" name="13confidence" id="13-75" value="75">75%</label>
+            <label for="13-85"><input type="radio" name="13confidence" id="13-85" value="85">85%</label>
+            <label for="13-95"><input type="radio" name="13confidence" id="13-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>14. Cleopatra or Muhammad?</h3>
+            <h4>Answer</h4>
+            <label for="14Cleopatra"><input type="radio" name="14answer" value="Cleopatra"
+                                            id="14Cleopatra"/>Cleopatra</label>
+            <label for="14Muhammad"><input type="radio" name="14answer" value="Muhammad"
+                                           id="14Muhammad"/>Muhammad</label>
+            <h4>Confidence</h4>
+            <label for="14-55"><input type="radio" name="14confidence" id="14-55" value="55">55%</label>
+            <label for="14-65"><input type="radio" name="14confidence" id="14-65" value="65">65%</label>
+            <label for="14-75"><input type="radio" name="14confidence" id="14-75" value="75">75%</label>
+            <label for="14-85"><input type="radio" name="14confidence" id="14-85" value="85">85%</label>
+            <label for="14-95"><input type="radio" name="14confidence" id="14-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>15. William Shakespeare or Joan of Arc?</h3>
+            <h4>Answer</h4>
+            <label for="15William Shakespeare"><input type="radio" name="15answer" value="William Shakespeare"
+                                                      id="15William Shakespeare"/>William Shakespeare</label>
+            <label for="15 Joan of Arc"><input type="radio" name="15answer" value="Joan of Arc" id="15 Joan of Arc"/>Joan
+                of Arc</label>
+            <h4>Confidence</h4>
+            <label for="15-55"><input type="radio" name="15confidence" id="15-55" value="55">55%</label>
+            <label for="15-65"><input type="radio" name="15confidence" id="15-65" value="65">65%</label>
+            <label for="15-75"><input type="radio" name="15confidence" id="15-75" value="75">75%</label>
+            <label for="15-85"><input type="radio" name="15confidence" id="15-85" value="85">85%</label>
+            <label for="15-95"><input type="radio" name="15confidence" id="15-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>16. George Washington or Sun Tzu?</h3>
+            <h4>Answer</h4>
+            <label for="16George Washington"><input type="radio" name="16answer" value="George Washington"
+                                                    id="16George Washington"/>George Washington</label>
+            <label for="16Sun Tzu"><input type="radio" name="16answer" value="Sun Tzu" id="16Sun Tzu"/>Sun Tzu</label>
+            <h4>Confidence</h4>
+            <label for="16-55"><input type="radio" name="16confidence" id="16-55" value="55">55%</label>
+            <label for="16-65"><input type="radio" name="16confidence" id="16-65" value="65">65%</label>
+            <label for="16-75"><input type="radio" name="16confidence" id="16-75" value="75">75%</label>
+            <label for="16-85"><input type="radio" name="16confidence" id="16-85" value="85">85%</label>
+            <label for="16-95"><input type="radio" name="16confidence" id="16-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>17. Genghis Khan or Leonardo da Vinci?</h3>
+            <h4>Answer</h4>
+            <label for="17Genghis Khan"><input type="radio" name="17answer" value="Genghis Khan" id="17Genghis Khan"/>Genghis
+                Khan</label>
+            <label for="17Leonardo da Vinci"><input type="radio" name="17answer" value="Leonardo da Vinci"
+                                                    id="17Leonardo da Vinci"/>Leonardo da Vinci</label>
+            <h4>Confidence</h4>
+            <label for="17-55"><input type="radio" name="17confidence" id="17-55" value="55">55%</label>
+            <label for="17-65"><input type="radio" name="17confidence" id="17-65" value="65">65%</label>
+            <label for="17-75"><input type="radio" name="17confidence" id="17-75" value="75">75%</label>
+            <label for="17-85"><input type="radio" name="17confidence" id="17-85" value="85">85%</label>
+            <label for="17-95"><input type="radio" name="17confidence" id="17-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>18. Queen Victoria or Karl Marx?</h3>
+            <h4>Answer</h4>
+            <label for="18Queen Victoria"><input type="radio" name="18answer" value="Queen Victoria"
+                                                 id="18Queen Victoria"/>Queen Victoria</label>
+            <label for="18Karl Marx"><input type="radio" name="18answer" value="Karl Marx" id="18Karl Marx"/>Karl
+                Marx</label>
+            <h4>Confidence</h4>
+            <label for="18-55"><input type="radio" name="18confidence" id="18-55" value="55">55%</label>
+            <label for="18-65"><input type="radio" name="18confidence" id="18-65" value="65">65%</label>
+            <label for="18-75"><input type="radio" name="18confidence" id="18-75" value="75">75%</label>
+            <label for="18-85"><input type="radio" name="18confidence" id="18-85" value="85">85%</label>
+            <label for="18-95"><input type="radio" name="18confidence" id="18-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>19. Saddam Hussein or Marilyn Monroe?</h3>
+            <h4>Answer</h4>
+            <label for="19Saddam Hussein"><input type="radio" name="19answer" value="Saddam Hussein"
+                                                 id="19Saddam Hussein"/>Saddam Hussein</label>
+            <label for="19Marilyn Monroe"><input type="radio" name="19answer" value="Marilyn Monroe"
+                                                 id="19Marilyn Monroe"/>Marilyn Monroe</label>
+            <h4>Confidence</h4>
+            <label for="19-55"><input type="radio" name="19confidence" id="19-55" value="55">55%</label>
+            <label for="19-65"><input type="radio" name="19confidence" id="19-65" value="65">65%</label>
+            <label for="19-75"><input type="radio" name="19confidence" id="19-75" value="75">75%</label>
+            <label for="19-85"><input type="radio" name="19confidence" id="19-85" value="85">85%</label>
+            <label for="19-95"><input type="radio" name="19confidence" id="19-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>20. Albert Einstein or Mao Zedong?</h3>
+            <h4>Answer</h4>
+            <label for="20Albert Einstein"><input type="radio" name="20answer" value="Albert Einstein"
+                                                  id="20Albert Einstein"/>Albert Einstein</label>
+            <label for="20Mao Zedong"><input type="radio" name="20answer" value="Mao Zedong" id="20Mao Zedong"/>Mao
+                Zedong</label>
+            <h4>Confidence</h4>
+            <label for="20-55"><input type="radio" name="20confidence" id="20-55" value="55">55%</label>
+            <label for="20-65"><input type="radio" name="20confidence" id="20-65" value="65">65%</label>
+            <label for="20-75"><input type="radio" name="20confidence" id="20-75" value="75">75%</label>
+            <label for="20-85"><input type="radio" name="20confidence" id="20-85" value="85">85%</label>
+            <label for="20-95"><input type="radio" name="20confidence" id="20-95" value="95">95%</label>
+        </section>
+        <h2>Round 3: Which country had more people in 2019?</h2>
+        <section>
+            <h3>21. Germany or France?</h3>
+            <h4>Answer</h4>
+            <label for="21Germany"><input type="radio" name="21answer" value="Germany" id="21Germany"/>Germany</label>
+            <label for="21France"><input type="radio" name="21answer" value="France" id="21France"/>France</label>
+            <h4>Confidence</h4>
+            <label for="21-55"><input type="radio" name="21confidence" id="21-55" value="55">55%</label>
+            <label for="21-65"><input type="radio" name="21confidence" id="21-65" value="65">65%</label>
+            <label for="21-75"><input type="radio" name="21confidence" id="21-75" value="75">75%</label>
+            <label for="21-85"><input type="radio" name="21confidence" id="21-85" value="85">85%</label>
+            <label for="21-95"><input type="radio" name="21confidence" id="21-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>22. Japan or South Korea?</h3>
+            <h4>Answer</h4>
+            <label for="22Japan"><input type="radio" name="22answer" value="Japan" id="22Japan"/>Japan</label>
+            <label for="22South"><input type="radio" name="22answer" value="South" id="22South"/>South</label>
+            <h4>Confidence</h4>
+            <label for="22-55"><input type="radio" name="22confidence" id="22-55" value="55">55%</label>
+            <label for="22-65"><input type="radio" name="22confidence" id="22-65" value="65">65%</label>
+            <label for="22-75"><input type="radio" name="22confidence" id="22-75" value="75">75%</label>
+            <label for="22-85"><input type="radio" name="22confidence" id="22-85" value="85">85%</label>
+            <label for="22-95"><input type="radio" name="22confidence" id="22-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>23. Brazil or Argentina?</h3>
+            <h4>Answer</h4>
+            <label for="23Brazil"><input type="radio" name="23answer" value="Brazil" id="23Brazil"/>Brazil</label>
+            <label for="23Argentina"><input type="radio" name="23answer" value="Argentina"
+                                            id="23Argentina"/>Argentina</label>
+            <h4>Confidence</h4>
+            <label for="23-55"><input type="radio" name="23confidence" id="23-55" value="55">55%</label>
+            <label for="23-65"><input type="radio" name="23confidence" id="23-65" value="65">65%</label>
+            <label for="23-75"><input type="radio" name="23confidence" id="23-75" value="75">75%</label>
+            <label for="23-85"><input type="radio" name="23confidence" id="23-85" value="85">85%</label>
+            <label for="23-95"><input type="radio" name="23confidence" id="23-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>24. Egypt or Botswana?</h3>
+            <h4>Answer</h4>
+            <label for="24Egypt"><input type="radio" name="24answer" value="Egypt" id="24Egypt"/>Egypt</label>
+            <label for="24Botswana"><input type="radio" name="24answer" value="Botswana"
+                                           id="24Botswana"/>Botswana</label>
+            <h4>Confidence</h4>
+            <label for="24-55"><input type="radio" name="24confidence" id="24-55" value="55">55%</label>
+            <label for="24-65"><input type="radio" name="24confidence" id="24-65" value="65">65%</label>
+            <label for="24-75"><input type="radio" name="24confidence" id="24-75" value="75">75%</label>
+            <label for="24-85"><input type="radio" name="24confidence" id="24-85" value="85">85%</label>
+            <label for="24-95"><input type="radio" name="24confidence" id="24-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>25. Mexico or Guatemala?</h3>
+            <h4>Answer</h4>
+            <label for="25Mexico"><input type="radio" name="25answer" value="Mexico" id="25Mexico"/>Mexico</label>
+            <label for="25Guatemala"><input type="radio" name="25answer" value="Guatemala"
+                                            id="25Guatemala"/>Guatemala</label>
+            <h4>Confidence</h4>
+            <label for="25-55"><input type="radio" name="25confidence" id="25-55" value="55">55%</label>
+            <label for="25-65"><input type="radio" name="25confidence" id="25-65" value="65">65%</label>
+            <label for="25-75"><input type="radio" name="25confidence" id="25-75" value="75">75%</label>
+            <label for="25-85"><input type="radio" name="25confidence" id="25-85" value="85">85%</label>
+            <label for="25-95"><input type="radio" name="25confidence" id="25-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>26. Panama or Belize?</h3>
+            <h4>Answer</h4>
+            <label for="26Panama"><input type="radio" name="26answer" value="Panama" id="26Panama"/>Panama</label>
+            <label for="26Belize"><input type="radio" name="26answer" value="Belize" id="26Belize"/>Belize</label>
+            <h4>Confidence</h4>
+            <label for="26-55"><input type="radio" name="26confidence" id="26-55" value="55">55%</label>
+            <label for="26-65"><input type="radio" name="26confidence" id="26-65" value="65">65%</label>
+            <label for="26-75"><input type="radio" name="26confidence" id="26-75" value="75">75%</label>
+            <label for="26-85"><input type="radio" name="26confidence" id="26-85" value="85">85%</label>
+            <label for="26-95"><input type="radio" name="26confidence" id="26-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>27. Jamaica or Haiti?</h3>
+            <h4>Answer</h4>
+            <label for="27Jamaica"><input type="radio" name="27answer" value="Jamaica" id="27Jamaica"/>Jamaica</label>
+            <label for="27Haiti"><input type="radio" name="27answer" value="Haiti" id="27Haiti"/>Haiti</label>
+            <h4>Confidence</h4>
+            <label for="27-55"><input type="radio" name="27confidence" id="27-55" value="55">55%</label>
+            <label for="27-65"><input type="radio" name="27confidence" id="27-65" value="65">65%</label>
+            <label for="27-75"><input type="radio" name="27confidence" id="27-75" value="75">75%</label>
+            <label for="27-85"><input type="radio" name="27confidence" id="27-85" value="85">85%</label>
+            <label for="27-95"><input type="radio" name="27confidence" id="27-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>28. Greece or Norway?</h3>
+            <h4>Answer</h4>
+            <label for="28Greece"><input type="radio" name="28answer" value="Greece" id="28Greece"/>Greece</label>
+            <label for="28Norway"><input type="radio" name="28answer" value="Norway" id="28Norway"/>Norway</label>
+            <h4>Confidence</h4>
+            <label for="28-55"><input type="radio" name="28confidence" id="28-55" value="55">55%</label>
+            <label for="28-65"><input type="radio" name="28confidence" id="28-65" value="65">65%</label>
+            <label for="28-75"><input type="radio" name="28confidence" id="28-75" value="75">75%</label>
+            <label for="28-85"><input type="radio" name="28confidence" id="28-85" value="85">85%</label>
+            <label for="28-95"><input type="radio" name="28confidence" id="28-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>29. China or India?</h3>
+            <h4>Answer</h4>
+            <label for="29China"><input type="radio" name="29answer" value="China" id="29China"/>China</label>
+            <label for="29India"><input type="radio" name="29answer" value="India" id="29India"/>India</label>
+            <h4>Confidence</h4>
+            <label for="29-55"><input type="radio" name="29confidence" id="29-55" value="55">55%</label>
+            <label for="29-65"><input type="radio" name="29confidence" id="29-65" value="65">65%</label>
+            <label for="29-75"><input type="radio" name="29confidence" id="29-75" value="75">75%</label>
+            <label for="29-85"><input type="radio" name="29confidence" id="29-85" value="85">85%</label>
+            <label for="29-95"><input type="radio" name="29confidence" id="29-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>30. Iraq or Iran?</h3>
+            <h4>Answer</h4>
+            <label for="30Iraq"><input type="radio" name="30answer" value="Iraq" id="30Iraq"/>Iraq</label>
+            <label for="30Iran"><input type="radio" name="30answer" value="Iran" id="30Iran"/>Iran</label>
+            <h4>Confidence</h4>
+            <label for="30-55"><input type="radio" name="30confidence" id="30-55" value="55">55%</label>
+            <label for="30-65"><input type="radio" name="30confidence" id="30-65" value="65">65%</label>
+            <label for="30-75"><input type="radio" name="30confidence" id="30-75" value="75">75%</label>
+            <label for="30-85"><input type="radio" name="30confidence" id="30-85" value="85">85%</label>
+            <label for="30-95"><input type="radio" name="30confidence" id="30-95" value="95">95%</label>
+        </section>
+        <h2>Round 4: Are these science facts true or false?</h2>
+        <section>
+            <h3>31. Mars has one moon, just like Earth.</h3>
+            <h4>Answer</h4>
+            <label for="31true"><input type="radio" name="31answer" value="true" id="31true"/>true</label>
+            <label for="31false"><input type="radio" name="31answer" value="false" id="31false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="31-55"><input type="radio" name="31confidence" id="31-55" value="55">55%</label>
+            <label for="31-65"><input type="radio" name="31confidence" id="31-65" value="65">65%</label>
+            <label for="31-75"><input type="radio" name="31confidence" id="31-75" value="75">75%</label>
+            <label for="31-85"><input type="radio" name="31confidence" id="31-85" value="85">85%</label>
+            <label for="31-95"><input type="radio" name="31confidence" id="31-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>32. Scurvy is caused by a deficit of vitamin C.</h3>
+            <h4>Answer</h4>
+            <label for="32true"><input type="radio" name="32answer" value="true" id="32true"/>true</label>
+            <label for="32false"><input type="radio" name="32answer" value="false" id="32false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="32-55"><input type="radio" name="32confidence" id="32-55" value="55">55%</label>
+            <label for="32-65"><input type="radio" name="32confidence" id="32-65" value="65">65%</label>
+            <label for="32-75"><input type="radio" name="32confidence" id="32-75" value="75">75%</label>
+            <label for="32-85"><input type="radio" name="32confidence" id="32-85" value="85">85%</label>
+            <label for="32-95"><input type="radio" name="32confidence" id="32-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>33. Brass is made from iron and copper.</h3>
+            <h4>Answer</h4>
+            <label for="33true"><input type="radio" name="33answer" value="true" id="33true"/>true</label>
+            <label for="33false"><input type="radio" name="33answer" value="false" id="33false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="33-55"><input type="radio" name="33confidence" id="33-55" value="55">55%</label>
+            <label for="33-65"><input type="radio" name="33confidence" id="33-65" value="65">65%</label>
+            <label for="33-75"><input type="radio" name="33confidence" id="33-75" value="75">75%</label>
+            <label for="33-85"><input type="radio" name="33confidence" id="33-85" value="85">85%</label>
+            <label for="33-95"><input type="radio" name="33confidence" id="33-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>34. One tablespoon of oil has more calories than one tablespoon of butter.</h3>
+            <h4>Answer</h4>
+            <label for="34true"><input type="radio" name="34answer" value="true" id="34true"/>true</label>
+            <label for="34false"><input type="radio" name="34answer" value="false" id="34false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="34-55"><input type="radio" name="34confidence" id="34-55" value="55">55%</label>
+            <label for="34-65"><input type="radio" name="34confidence" id="34-65" value="65">65%</label>
+            <label for="34-75"><input type="radio" name="34confidence" id="34-75" value="75">75%</label>
+            <label for="34-85"><input type="radio" name="34confidence" id="34-85" value="85">85%</label>
+            <label for="34-95"><input type="radio" name="34confidence" id="34-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>35. Helium is the lightest element.</h3>
+            <h4>Answer</h4>
+            <label for="35true"><input type="radio" name="35answer" value="true" id="35true"/>true</label>
+            <label for="35false"><input type="radio" name="35answer" value="false" id="35false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="35-55"><input type="radio" name="35confidence" id="35-55" value="55">55%</label>
+            <label for="35-65"><input type="radio" name="35confidence" id="35-65" value="65">65%</label>
+            <label for="35-75"><input type="radio" name="35confidence" id="35-75" value="75">75%</label>
+            <label for="35-85"><input type="radio" name="35confidence" id="35-85" value="85">85%</label>
+            <label for="35-95"><input type="radio" name="35confidence" id="35-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>36. The common cold is caused by bacteria.</h3>
+            <h4>Answer</h4>
+            <label for="36true"><input type="radio" name="36answer" value="true" id="36true"/>true</label>
+            <label for="36false"><input type="radio" name="36answer" value="false" id="36false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="36-55"><input type="radio" name="36confidence" id="36-55" value="55">55%</label>
+            <label for="36-65"><input type="radio" name="36confidence" id="36-65" value="65">65%</label>
+            <label for="36-75"><input type="radio" name="36confidence" id="36-75" value="75">75%</label>
+            <label for="36-85"><input type="radio" name="36confidence" id="36-85" value="85">85%</label>
+            <label for="36-95"><input type="radio" name="36confidence" id="36-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>37. The deepest place on Earth is in the Pacific Ocean.</h3>
+            <h4>Answer</h4>
+            <label for="37true"><input type="radio" name="37answer" value="true" id="37true"/>true</label>
+            <label for="37false"><input type="radio" name="37answer" value="false" id="37false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="37-55"><input type="radio" name="37confidence" id="37-55" value="55">55%</label>
+            <label for="37-65"><input type="radio" name="37confidence" id="37-65" value="65">65%</label>
+            <label for="37-75"><input type="radio" name="37confidence" id="37-75" value="75">75%</label>
+            <label for="37-85"><input type="radio" name="37confidence" id="37-85" value="85">85%</label>
+            <label for="37-95"><input type="radio" name="37confidence" id="37-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>38. Seasons are caused by the earth orbiting the sun in an elliptical path.</h3>
+            <h4>Answer</h4>
+            <label for="38true"><input type="radio" name="38answer" value="true" id="38true"/>true</label>
+            <label for="38false"><input type="radio" name="38answer" value="false" id="38false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="38-55"><input type="radio" name="38confidence" id="38-55" value="55">55%</label>
+            <label for="38-65"><input type="radio" name="38confidence" id="38-65" value="65">65%</label>
+            <label for="38-75"><input type="radio" name="38confidence" id="38-75" value="75">75%</label>
+            <label for="38-85"><input type="radio" name="38confidence" id="38-85" value="85">85%</label>
+            <label for="38-95"><input type="radio" name="38confidence" id="38-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3>39. Jupiter is the largest planet in our solar system.</h3>
+            <h4>Answer</h4>
+            <label for="39true"><input type="radio" name="39answer" value="true" id="39true"/>true</label>
+            <label for="39false"><input type="radio" name="39answer" value="false" id="39false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="39-55"><input type="radio" name="39confidence" id="39-55" value="55">55%</label>
+            <label for="39-65"><input type="radio" name="39confidence" id="39-65" value="65">65%</label>
+            <label for="39-75"><input type="radio" name="39confidence" id="39-75" value="75">75%</label>
+            <label for="39-85"><input type="radio" name="39confidence" id="39-85" value="85">85%</label>
+            <label for="39-95"><input type="radio" name="39confidence" id="39-95" value="95">95%</label>
+        </section>
+        <section>
+            <h3> 40. The atoms in a solid are more densely packed than the atoms in a gas.</h3>
+            <h4>Answer</h4>
+            <label for="40true"><input type="radio" name="40answer" value="true" id="40true"/>true</label>
+            <label for="40false"><input type="radio" name="40answer" value="false" id="40false"/>false</label>
+            <h4>Confidence</h4>
+            <label for="40-55"><input type="radio" name="40confidence" id="40-55" value="55">55%</label>
+            <label for="40-65"><input type="radio" name="40confidence" id="40-65" value="65">65%</label>
+            <label for="40-75"><input type="radio" name="40confidence" id="40-75" value="75">75%</label>
+            <label for="40-85"><input type="radio" name="40confidence" id="40-85" value="85">85%</label>
+            <label for="40-95"><input type="radio" name="40confidence" id="40-95" value="95">95%</label>
+        </section>
+    </form>
+    <h2>Result</h2>
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th>Column A: Number of times you were right</th>
+            <th>Column B: Number of times you were wrong</th>
+            <th>% of the time you’re right at this confidence level = A / (A + B)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>55% sure</td>
+            <td id="55-a">0</td>
+            <td id="55-b">0</td>
+            <td id="55-confidence">?</td>
+        </tr>
+        <tr>
+            <td>65% sure</td>
+            <td id="65-a">0</td>
+            <td id="65-b">0</td>
+            <td id="65-confidence">?</td>
+        </tr>
+        <tr>
+            <td>75% sure</td>
+            <td id="75-a">0</td>
+            <td id="75-b">0</td>
+            <td id="75-confidence">?</td>
+        </tr>
+        <tr>
+            <td>85% sure</td>
+            <td id="85-a">0</td>
+            <td id="85-b">0</td>
+            <td id="85-confidence">?</td>
+        </tr>
+        <tr>
+            <td>95% sure</td>
+            <td id="95-a">0</td>
+            <td id="95-b">0</td>
+            <td id="95-confidence">?</td>
+        </tr>
+        </tbody>
+    </table>
+    <button id="show-result">Calculate confidence level</button>
+</main>
+<script>
+    const correctAnswers = [
+        undefined,
+        "false",
+        "true",
+        "The",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "false",
+        "true",
+        "Confucius",
+        "Mahatma Gandhi",
+        "Nelson Mandela",
+        "Cleopatra",
+        "Joan of Arc",
+        "Sun Tzu",
+        "Genghis Khan",
+        "Karl Marx",
+        "Marilyn Monroe",
+        "Albert Einstein",
+        "Germany",
+        "Japan",
+        "Brazil",
+        "Egypt",
+        "Mexico",
+        "Panama",
+        "Haiti",
+        "Greece",
+        "China",
+        "Iran",
+        "false",
+        "true",
+        "false",
+        "true",
+        "false",
+        "false",
+        "true",
+        "false",
+        "true",
+        "true",
+    ]
+    document.getElementById("show-result").addEventListener("click", () => {
+        const answersAndConfidence = Object.fromEntries(new FormData(document.getElementById("questions")))
+        const confidenceLevel = {
+            "55": {rightCount: 0, wrongCount: 0, correctAtConfidenceLevel: 0},
+            "65": {rightCount: 0, wrongCount: 0, correctAtConfidenceLevel: 0},
+            "75": {rightCount: 0, wrongCount: 0, correctAtConfidenceLevel: 0},
+            "85": {rightCount: 0, wrongCount: 0, correctAtConfidenceLevel: 0},
+            "95": {rightCount: 0, wrongCount: 0, correctAtConfidenceLevel: 0}
+        }
+        for (let i = 1; i <= 40; i++) {
+            if (answersAndConfidence[`${i}answer`] && answersAndConfidence[`${i}confidence`]) {
+                if (correctAnswers[i] === answersAndConfidence[`${i}answer`]) {
+                    confidenceLevel[answersAndConfidence[`${i}confidence`]].rightCount += 1
+                } else {
+                    confidenceLevel[answersAndConfidence[`${i}confidence`]].wrongCount += 1
+                }
+            }
+        }
+        confidenceLevel["55"].correctAtConfidenceLevel = confidenceLevel["55"].rightCount / (confidenceLevel["55"].rightCount + confidenceLevel["55"].wrongCount);
+        confidenceLevel["65"].correctAtConfidenceLevel = confidenceLevel["65"].rightCount / (confidenceLevel["65"].rightCount + confidenceLevel["65"].wrongCount);
+        confidenceLevel["75"].correctAtConfidenceLevel = confidenceLevel["75"].rightCount / (confidenceLevel["75"].rightCount + confidenceLevel["75"].wrongCount);
+        confidenceLevel["85"].correctAtConfidenceLevel = confidenceLevel["85"].rightCount / (confidenceLevel["85"].rightCount + confidenceLevel["85"].wrongCount);
+        confidenceLevel["95"].correctAtConfidenceLevel = confidenceLevel["95"].rightCount / (confidenceLevel["95"].rightCount + confidenceLevel["95"].wrongCount);
+
+        [55, 65, 75, 85, 95].forEach(confidence => {
+            document.getElementById(`${confidence}-a`).innerText = confidenceLevel[`${confidence}`].rightCount;
+            document.getElementById(`${confidence}-b`).innerText = confidenceLevel[`${confidence}`].wrongCount;
+            document.getElementById(`${confidence}-confidence`).innerText = confidenceLevel[`${confidence}`].correctAtConfidenceLevel ? `${Math.abs(confidenceLevel[`${confidence}`].correctAtConfidenceLevel * 100)}%` : "?";
+        });
+    })
+</script>
+</body>
+</html>
