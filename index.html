@@ -700,10 +700,11 @@
         confidenceLevel["85"].correctAtConfidenceLevel = confidenceLevel["85"].rightCount / (confidenceLevel["85"].rightCount + confidenceLevel["85"].wrongCount);
         confidenceLevel["95"].correctAtConfidenceLevel = confidenceLevel["95"].rightCount / (confidenceLevel["95"].rightCount + confidenceLevel["95"].wrongCount);
 
+        const format = (value) => new Intl.NumberFormat('en-GB', {style: 'percent', maximumFractionDigits:2, minimumFractionDigits:2}).format(value);
         [55, 65, 75, 85, 95].forEach(confidence => {
             document.getElementById(`${confidence}-a`).innerText = confidenceLevel[`${confidence}`].rightCount;
             document.getElementById(`${confidence}-b`).innerText = confidenceLevel[`${confidence}`].wrongCount;
-            document.getElementById(`${confidence}-confidence`).innerText = confidenceLevel[`${confidence}`].correctAtConfidenceLevel ? `${Math.abs(confidenceLevel[`${confidence}`].correctAtConfidenceLevel * 100)}%` : "?";
+            document.getElementById(`${confidence}-confidence`).innerText = confidenceLevel[`${confidence}`].correctAtConfidenceLevel ? format(confidenceLevel[`${confidence}`].correctAtConfidenceLevel) : "?";
         });
 
         [...document.querySelectorAll('.correct-answer')].forEach(el => {
